@@ -17,7 +17,7 @@ class StudentController extends Controller
      * TODO: Replace with YOUR actual student information.
      */
     private $student = [
-        'student_id'  => '2026-00427',
+        'student_id'  => '2026',
         'name'        => 'Juan Dela Cruz',
         'course'      => 'BS Computer Science',
         'year'        => '3rd Year',
