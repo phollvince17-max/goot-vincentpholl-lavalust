@@ -415,8 +415,6 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
             <nav class="nav" aria-label="Sidebar navigation">
                 <a href="/">Overview</a>
                 <a href="/users" class="active">Members</a>
-                <a href="#">Reports</a>
-                <a href="#">Settings</a>
             </nav>
         </aside>
 
