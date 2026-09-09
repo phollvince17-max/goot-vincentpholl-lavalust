@@ -44,6 +44,20 @@ class AuthController extends Controller
         }
 
         $this->call->database();
+        $this->call->dbforge();
+
+        if (!$this->dbforge->column_exists('users', 'password')) {
+            $this->dbforge->add_column('users', [
+                'password' => [
+                    'type'       => 'VARCHAR',
+                    'constraint' => 255,
+                    'null'       => FALSE,
+                    'default'    => '',
+                    'after'      => 'email',
+                ],
+            ]);
+        }
+
         $this->call->model('UsersModel');
 
         $user = $this->UsersModel->find_by('username', $username);

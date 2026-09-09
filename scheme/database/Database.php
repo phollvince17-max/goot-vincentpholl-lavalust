@@ -340,7 +340,7 @@ class Database {
             $part = trim($part);
 
             // Strip backtick quoting
-            if (strlen($part) >= 2 && $part[0] === '`' && $part[-1] === '`') {
+            if (strlen($part) >= 2 && $part[0] === '' && $part[-1] === '') {
                 $part = substr($part, 1, -1);
             }
 
