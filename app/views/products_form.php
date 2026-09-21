@@ -1,4 +1,3 @@
-```php
 <?php
 defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 
@@ -520,4 +519,3 @@ $form_action = $is_edit ? base_url('products/edit/' . $product['id']) : base_url
 
 </body>
 </html>
-```

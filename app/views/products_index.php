@@ -1,4 +1,3 @@
-```php
 <?php
 defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 
@@ -797,4 +796,3 @@ $is_admin = (($_SESSION['role'] ?? null) === 'admin');
 
 </body>
 </html>
-```
